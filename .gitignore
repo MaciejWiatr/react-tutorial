@@ -1,0 +1,8 @@
+/adopt-me/node_modules
+/adopt-me/.DS_Store
+/adopt-me/.cache/
+/adopt-me/coverage/
+/adopt-me/.env
+.vscode/
+.env
+/adopt-me/dist
