@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import SearchParams from "./SearchParams.jsx";
 import { Router, Link } from "@reach/router";
-import Details from "./Details.js";
+import Details from "./Details.jsx";
 
 const App = () => {
     return (
