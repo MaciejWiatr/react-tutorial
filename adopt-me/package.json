@@ -33,6 +33,8 @@
         "sass": "^1.26.7"
     },
     "dependencies": {
+        "@emotion/babel-preset-css-prop": "^10.0.27",
+        "@emotion/core": "^10.0.28",
         "@frontendmasters/pet": "^1.0.3",
         "@reach/router": "^1.3.3",
         "react": "^16.13.1",

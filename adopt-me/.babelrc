@@ -1,4 +1,12 @@
 {
-    "presets": ["@babel/preset-react", "@babel/preset-env"]
-    // "plugins": ["@babel/plugin-proposal-class-properties"]
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-env",
+        [
+            "@emotion/babel-preset-css-prop",
+            {
+                "sourceMap": false
+            }
+        ]
+    ]
 }
