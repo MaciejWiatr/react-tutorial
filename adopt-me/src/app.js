@@ -25,4 +25,6 @@ const App = () => {
         </React.StrictMode>
     );
 };
-render(<App />, document.getElementById("root"));
+// render(<App />, document.getElementById("root"));
+
+export default App;

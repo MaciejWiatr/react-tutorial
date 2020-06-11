@@ -7,7 +7,13 @@ import ErrorBoundary from "./ErrorBoundary.jsx";
 import ThemeContext from "./ThemeContext.jsx";
 
 class Details extends React.Component {
-    state = { loading: true, showModal: false };
+    constructor(props) {
+        super(props);
+        this.state = { loading: true, showModal: false };
+        this.toggleModal = () =>
+            this.setState({ showModal: !this.state.showModal });
+        this.adopt = () => navigate(this.state.url);
+    }
 
     componentDidMount() {
         pet.animal(this.props.id).then(({ animal }) => {
@@ -24,8 +30,6 @@ class Details extends React.Component {
         }, console.error);
     }
 
-    toggleModal = () => this.setState({ showModal: !this.state.showModal });
-    adopt = () => navigate(this.state.url);
     render() {
         if (this.state.loading) {
             return <h1>Loading ... </h1>;
